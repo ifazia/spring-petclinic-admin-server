@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://config-server:8888
+      import: configserver:*
+  application:
+    name: admin-server
+  profiles:
+    active: docker
